@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포프리</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/default.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container flex-col-center">
+            <header class="container-header"><img src="/img/common/popri-ico.png" alt="앱 로고"></header>
+            <main class="content">
+                <form role="form" id="loginForm" class="content-form">
+                    <div class="field is-grouped">
+                        <div class="field">
+                            <label for="id" class="box label">아이디</label>
+                            <span class="box-rounded input-wrapper">
+                                <input type="text" name="id" id="id" class="box input" autofocus>
+                            </span>
+                        </div>
+                        <div class="field">
+                            <label for="password" class="box label">비밀번호</label>
+                            <span class="box-rounded input-wrapper">
+                                <input type="password" name="password" id="password" class="box input" autocomplete="off">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="field is-grouped">
+                        <div class="field">
+                            <span class="box-rounded btn-primary">
+                                <button type="button" id="loginBtn" class="box btn">로그인</button>
+                            </span>
+                        </div>
+                        <nav class="field navbar-link">
+                            <ul class="flex-row-middle links-container">
+                                <li class="link-item"><a href="#" role="link" class="link-item-text">아이디 찾기</a></li>|
+                                <li class="link-item"><a href="#" role="link" class="link-item-text">비밀번호 찾기</a></li>|
+                                <li class="link-item"><a href="" role="link" class="link-item-text">회원가입</a></li>
+                            </ul>
+                        </nav>
+                        <hr class="field">
+                        <div class="field">
+                            <span class="box-rounded btn-kakao">
+                                <button type="button" id="kakaoBtn" class="box btn-social">카카오 계정으로 로그인</button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <span class="box-rounded btn-google">
+                            <button type="button" id="googleBtn" class="box btn-social">구글 계정으로 로그인</button>
+                        </span>
+                    </div>
+                </form>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
